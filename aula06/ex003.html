@@ -19,15 +19,19 @@
     <h1>Olá, Mundo!</h1> <!-- Comentários no html-->
     <p>Olá</p>
     <script>
+        // Soma
         var n1 = Number(window.prompt('Digite um número: '))
         var n2 = Number(window.prompt('Agora digite outro número: '))
         var n3 = n1 + n2
         window.alert('A soma desses dois valores é de: ' + n3 + '!')
-        var n1 = window.prompt('Digite um número: ')
-        var n2 = window.prompt('Agora digite outro número: ')
-        n1.toString()
-        String(n2)
-        window.alert('A soma desses dois valores é de: ' + n1 + n2 + '!')
+        // Concatenação
+        n1 = window.prompt('Digite um número: ')
+        n2 = window.prompt('Agora digite outro número: ')
+        
+        n3 = n1 + n2
+
+        window.alert(`A concatenação de ${n1} com ${n2} é: ${n3}`) // outro jeito de mostrar a variável
+        
 
     </script>
 </body>
