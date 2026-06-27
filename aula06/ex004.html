@@ -5,21 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        h1 {
+            font-size: 28pt;
+        }
         body{
             font: normal 20pt Arial;
         }
     </style>
 </head>
 <body>
-    
+    <h1>Aula 6 de Javascript / exercício 4</h1>
+    <p>Aprendendo a formatar  <strong>strings</strong> e <strong>números</strong>!</p>
+    <ul>
+        <strong><u>STRINGS</u></strong>
+        <li><strong>var.length:</strong> para descobrir quantas letras tem na string;</li>
+        <li><strong>var.toUpperCase():</strong> para colocar toda a string em letras maiúsculas;</li>
+        <li><strong>var.toLowerCase():</strong> para colocar toda a strings em letras minúsculas.</li>
+    </ul>
+    <ul>
+        <strong><u>NUMBERS</u></strong>
+        <li><strong>var.toFixed(x):</strong> determinar o número de casas após a vírgula (colocar o número no lugar do x);</li>
+        <li><strong>var.replace('.', ','):</strong> para substituir o ponto por vírgula;</li>
+        <li><strong>var.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}):</strong> para colocar como dinheiro em reais;
+            <ul><li>Para outras moedas, trocar o 'BRL' para a sigla desejada.<br/> Ex: <strong>USD</strong> para dólar, <strong>EUR</strong> para euro, <strong>KRW</strong> para won, <strong>JPY</strong> para iene, etc.</li></li></ul>
+    </ul>
+    <p>Vamos aos exemplos:</p>
+    <p><strong>Strings:</strong></p>
+
     <script>
         var nome = window.prompt('Qual é o seu nome?')
 
-        document.write(`Olá ${nome}! Seu nome tem ${nome.length} letras!<br/>`)
+        document.write(`Olá ${nome}!<br/>Seu nome tem ${nome.length} letras!<br/>`)
         document.write(`Seu nome em maiúsculas é: ${nome.toUpperCase()}<br/>`)
         document.write(`Seu nome em minúsculas é: ${nome.toLowerCase()}<br/>`)
-
-        document.write('<br/>Vamos formatar números agora!<br/>')
+        
+        document.write('<br/><strong>Numbers:</strong><br/><br/>')
         var n1 = 2809.1
         document.write(`Número original: ${n1}<br/>`)
 
