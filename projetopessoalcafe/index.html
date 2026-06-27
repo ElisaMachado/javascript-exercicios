@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Cálculo do café</title>
+    <style>
+        body {
+            background-color: rgb(136, 85, 23);
+            font: normal 20pt Trebuchet MS;
+            color: rgb(239, 236, 193);
+            text-align: center;
+        }
+        p {
+            font-size: 13pt;
+        }
+        img {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <script>
+    let cafe = Number(window.prompt(`Quantidade de café:`))
+
+    let porcentagem = Number(window.prompt(`Qual porcentagem você quer?`))
+
+    let resultado = (cafe * porcentagem) / (100 - porcentagem)
+
+    document.write(`A quantidade de café é: ${cafe}<br>`)
+
+    document.write(`A porcentagem escolhida é: ${porcentagem}%<br><br>`)
+
+    let y = 100 - porcentagem
+    document.write(`Cálculo: <br> <u>${cafe} . ${porcentagem}</u><br>${y}<br><br>`)
+
+    document.write(`<strong>Resultado: ${resultado.toFixed(2)}</strong><br>`)
+    
+    
+
+
+    </script>
+    <br>
+    <br>
+    <img src="fotocafe.jpg" alt="Foto de café">
+    <p>Feito por: Elisa Vachelli</p>
+</body>
+</html>
